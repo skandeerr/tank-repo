@@ -122,7 +122,7 @@ export default function HomePage() {
               <Label htmlFor="nameplatePresent">Nameplate Present? *</Label>
               <Select
                 value={data.general.nameplatePresent}
-                onValueChange={(value) => updateData({ general: { ...data.general, nameplatePresent: value } })}
+                onValueChange={(value:any) => updateData({ general: { ...data.general, nameplatePresent: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -137,7 +137,7 @@ export default function HomePage() {
               <Label htmlFor="asBuiltDrawingAvailable">As Built Drawing Available *</Label>
               <Select
                 value={data.general.asBuiltDrawingAvailable}
-                onValueChange={(value) => updateData({ general: { ...data.general, asBuiltDrawingAvailable: value } })}
+                onValueChange={(value:any) => updateData({ general: { ...data.general, asBuiltDrawingAvailable: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -218,7 +218,7 @@ export default function HomePage() {
               <Label htmlFor="leakDetectionSystem">Leak Detection System *</Label>
               <Select
                 value={data.dimensions.leakDetectionSystem}
-                onValueChange={(value) =>
+                onValueChange={(value:any) =>
                   updateData({ dimensions: { ...data.dimensions, leakDetectionSystem: value } })
                 }
               >
@@ -261,7 +261,7 @@ export default function HomePage() {
               <Label htmlFor="insulation">Insulation *</Label>
               <Select
                 value={data.roof.insulation}
-                onValueChange={(value) => updateData({ roof: { ...data.roof, insulation: value } })}
+                onValueChange={(value:any) => updateData({ roof: { ...data.roof, insulation: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -276,7 +276,7 @@ export default function HomePage() {
               <Label htmlFor="internalCoating">Internal Coating *</Label>
               <Select
                 value={data.roof.internalCoating}
-                onValueChange={(value) => updateData({ roof: { ...data.roof, internalCoating: value } })}
+                onValueChange={(value:any) => updateData({ roof: { ...data.roof, internalCoating: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -364,7 +364,7 @@ export default function HomePage() {
               <Label htmlFor="internallyCoated">Internally Coated *</Label>
               <Select
                 value={data.shell.internallyCoated}
-                onValueChange={(value) => updateData({ shell: { ...data.shell, internallyCoated: value } })}
+                onValueChange={(value:any) => updateData({ shell: { ...data.shell, internallyCoated: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -379,7 +379,7 @@ export default function HomePage() {
               <Label htmlFor="windStiffenerInstalled">Wind Stiffener Installed *</Label>
               <Select
                 value={data.shell.windStiffenerInstalled}
-                onValueChange={(value) => updateData({ shell: { ...data.shell, windStiffenerInstalled: value } })}
+                onValueChange={(value:any) => updateData({ shell: { ...data.shell, windStiffenerInstalled: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -416,7 +416,7 @@ export default function HomePage() {
               <Label htmlFor="dikeCorrection">Dike Correction *</Label>
               <Select
                 value={data.shell.dikeCorrection}
-                onValueChange={(value) => updateData({ shell: { ...data.shell, dikeCorrection: value } })}
+                onValueChange={(value:any) => updateData({ shell: { ...data.shell, dikeCorrection: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -431,7 +431,7 @@ export default function HomePage() {
               <Label htmlFor="anchors">Anchors *</Label>
               <Select
                 value={data.shell.anchors}
-                onValueChange={(value) => updateData({ shell: { ...data.shell, anchors: value } })}
+                onValueChange={(value:any) => updateData({ shell: { ...data.shell, anchors: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -541,7 +541,7 @@ export default function HomePage() {
               <Label htmlFor="annularRing">Annular Ring *</Label>
               <Select
                 value={data.bottom.annularRing}
-                onValueChange={(value) => updateData({ bottom: { ...data.bottom, annularRing: value } })}
+                onValueChange={(value:any) => updateData({ bottom: { ...data.bottom, annularRing: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
@@ -580,7 +580,7 @@ export default function HomePage() {
               <Label htmlFor="bottomInternalCoating">Internal Coating *</Label>
               <Select
                 value={data.bottom.internalCoating}
-                onValueChange={(value) => updateData({ bottom: { ...data.bottom, internalCoating: value } })}
+                onValueChange={(value:any) => updateData({ bottom: { ...data.bottom, internalCoating: value } })}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Select option" />
