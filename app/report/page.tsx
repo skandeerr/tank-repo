@@ -47,7 +47,7 @@ export default function ReportPage() {
       } else {
         generatePDFWithLibrary()
       }
-    } catch (error) {
+    } catch (error:any) {
       console.error("Erreur lors de la génération du PDF:", error)
       alert(`Erreur lors de la génération du PDF: ${error.message}. Veuillez réessayer.`)
       setIsGenerating(false)
@@ -93,7 +93,7 @@ export default function ReportPage() {
           console.log("PDF generated successfully")
           setIsGenerating(false)
         })
-        .catch((error) => {
+        .catch((error:any) => {
           console.error("PDF generation error:", error)
           alert("Erreur lors de la génération du PDF. Veuillez réessayer.")
           setIsGenerating(false)
